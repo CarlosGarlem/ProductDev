@@ -32,5 +32,9 @@ data
 st.map(data)
 
 
+'''
+## Pick-ups Histogram by Hour
+'''
 trips_hist = data.date_time.dt.hour.value_counts()
+trips_hist.index.name = 'hour'
 st.bar_chart(trips_hist)

@@ -91,10 +91,6 @@ for i in range(0, 101, 5):
 st.write('The wait is done!')
 
 
-'''
-### A sidebar
-'''
-
 st.sidebar.write('This is a sidebar')
 option_side = st.sidebar.selectbox('Select a slide number:', options = option_list)
 st.sidebar.write('The selection is: {}'.format(option_side))
