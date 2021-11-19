@@ -38,7 +38,7 @@ shinyServer(function(input, output, session) {
         
         plotData() %>%
             ggplot(aes(x = wt, y = mpg)) +
-            geom_point(aes(colour = point_color)) +
+            geom_point(aes(colour = point_color, size = 0.20)) +
             scale_color_manual(values = color_palette) +
             ylab('wt') + 
             xlab('mpg') + 
@@ -57,6 +57,7 @@ shinyServer(function(input, output, session) {
             theme_minimal()
         
     })
+    
     
     output$mtcars_tbl <- DT::renderDataTable({
         df <- mtcars
