@@ -42,7 +42,8 @@ shinyServer(function(input, output, session) {
             scale_color_manual(values = color_palette) +
             ylab('wt') + 
             xlab('mpg') + 
-            ggtitle('wt vs mpg')
+            ggtitle('wt vs mpg') + 
+            theme_classic()
         
     })
     
