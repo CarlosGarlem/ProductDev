@@ -9,7 +9,7 @@ shinyUI(fluidPage(
         plotOutput('plot_filter',
                    click = 'clk_filter',
                    dblclick = 'dclk_filter',
-                   hover = hoverOpts('hover_filter', delay = 600),
+                   hover = hoverOpts('hover_filter', delay = 500),
                    brush = 'brush_filter')
     ),
     fluidRow(DT::dataTableOutput('mtcars_tbl'))
